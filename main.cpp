@@ -81,21 +81,6 @@
   }
     
 int main(){
-  MyQueue q;
-  q.enqueue(1);
-  q.enqueue(2);
-  q.enqueue(3);
-  std::cout << "Front element: " << q.peek() << std::endl;
-  std::cout << "Queue size: " << q.size() << std::endl;
-
-  q.dequeue();
-  std::cout << "Front element: " << q.peek() << std::endl;
-  std::cout << "Queue size: " << q.size() << std::endl;
-
-  std::string expr;
-  std::cout << "Enter an infix expression";
-  std::cin >> expr;
-
     //If the expression is not balanced, print an error message
   if(!isBalanced(expr)){
     std::cout << "The expression is not balanced and is therefore invalid" << std::endl;
